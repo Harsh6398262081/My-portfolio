@@ -1,0 +1,265 @@
+/* General body */
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f9f9f9;
+    color:#333;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode{
+    background:#121212;
+    color:#f4f4f4;
+}
+
+/* Header / Hero */
+header{
+    background:#982598;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero-container img.hero-photo{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin-bottom:20px;
+    border:3px solid white;
+    transition: transform 0.3s;
+}
+
+.hero-container img.hero-photo:hover{
+    transform: translateY(-10px) scale(1.05);
+}
+
+.hero-container h1:hover,
+.hero-container .tagline:hover,
+.hero-container .resume-btn:hover{
+    transform: translateY(-5px) scale(1.02);
+    transition: transform 0.3s;
+}
+
+/* Resume Button */
+.resume-btn{
+    text-decoration:none;
+    background:#FF6584;
+    color:white;
+    padding:10px 20px;
+    border-radius:5px;
+    margin-top:10px;
+    display:inline-block;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.resume-btn:hover{
+    transform: translateY(-5px);
+    background:#ff4567;
+}
+
+/* Nav */
+nav{
+    background:#333;
+    text-align:center;
+    padding:10px;
+}
+
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    font-weight:bold;
+    transition: transform 0.3s;
+}
+
+nav a:hover{
+    transform: translateY(-3px) scale(1.02);
+}
+
+/* Sections */
+section{
+    background:white;
+    margin:20px auto;
+    padding:20px;
+    border-radius:10px;
+    max-width:900px;
+    opacity:0;
+    transform: translateY(30px);
+    transition: all 0.5s ease, transform 0.3s;
+}
+
+/* Fade-in on load */
+section.fade-in{
+    opacity:1;
+    transform: translateY(0);
+}
+
+/* Hover for all sections, headings, paragraphs, images */
+.hover-pop-container:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hover-pop-container h2:hover,
+.hover-pop-container h3:hover,
+.hover-pop-container p:hover,
+.hover-pop-container img:hover{
+    transform: translateY(-3px) scale(1.02);
+    transition: transform 0.3s;
+}
+
+/* Project cards */
+.projects-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+}
+
+.project-card{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover{
+    transform: translateY(-10px) scale(1.02);
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Lists */
+ul{
+    line-height:1.8;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#982598;
+    color:white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+footer:hover{
+    transform: translateY(-5px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Dark Mode */
+.dark-mode header{
+    background:#1F1B24;
+}
+
+.dark-mode nav{
+    background:#2C2C2C;
+}
+
+.dark-mode section{
+    background:#1E1E1E;
+}
+
+.dark-mode .resume-btn{
+    background:#FF6584;
+    color:white;
+}
+
+.dark-mode footer{
+    background:#1F1B24;
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle{
+    position:fixed;
+    top:15px;
+    right:20px;
+    cursor:pointer;
+    font-size:22px;
+    color:#333;
+}
+
+.dark-mode .dark-mode-toggle{
+    color:#c40c0c;
+}
+
+/* General body */
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#E491C9;  /* <-- Updated canvas background */
+    color:#333;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode{
+    background:#121212; /* dark mode still works */
+    color:#f4f4f4;
+}
+
+body{
+    margin:0;
+    font-family:Arial;
+    background:#E491C9;
+}
+
+/* Sections */
+section{
+    background:white;
+    margin:20px auto;
+    padding:20px;
+    border-radius:10px;
+    max-width:900px;
+}
+
+/* Hover container */
+.hover-pop-container:hover{
+    transform: translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* 🔥 MAIN FIX: APPLY TO ALL TEXT */
+section h2:hover,
+section h3:hover,
+section p:hover,
+section li:hover,
+section a:hover{
+    transform: translateY(-5px) scale(1.05);
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+/* Hero */
+.hero-photo{
+    width:150px;
+    border-radius:50%;
+    transition:0.3s;
+}
+
+.hero-photo:hover{
+    transform:translateY(-10px);
+}
+
+/* Project cards */
+.project-card{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    margin:10px;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+/* Dark mode */
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode section{
+    background:#1E1E1E;
+}
